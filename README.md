@@ -3,7 +3,7 @@
 The complete emulation of the Intel 8080 CPU written completely in C99. 
 
 
-##Goals:
+## Goals:
 
 
 - Make it as **readable** as possible without the cost of performance. 
