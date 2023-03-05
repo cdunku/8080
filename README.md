@@ -15,15 +15,26 @@ The complete emulation of the Intel 8080 CPU written completely in C99.
 
 The emulator was tested on different machines with the following specifications:
 
-Machine 1:
-CPU = i5 10500 
-RAM = 64GB DDR4-2666MHz
-The test lasted roughly ~20 seconds
+`Machine 1`:
 
-Machine 2:
-CPU = Ryzen 7 5700U
-RAM = 24GB DDR4-3200MHz
-The test lasted rougly ~22 seconds
+
+`CPU` = i5 10500 
+
+`RAM` = 64GB DDR4-2666MHz
+
+The test lasted roughly `~20 seconds`
+
+
+
+`Machine 2`:
+
+
+`CPU` = Ryzen 7 5700U
+
+`RAM` = 24GB DDR4-3200MHz
+
+The test lasted rougly `~22 seconds`
+
 
 
 The `altairclone` test should have the desired output:
