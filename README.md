@@ -1,4 +1,4 @@
-# 8080
+# 8080 Core
 
 The complete emulation of the Intel 8080 CPU written completely in C99. 
 
@@ -102,7 +102,7 @@ Program executed in 19 seconds
 ```
 
 
-## Resources
+## Resources:
 
 [Superzazu's 8080 implementation](https://github.com/superzazu/8080)
 
