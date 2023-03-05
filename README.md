@@ -48,7 +48,7 @@ The test lasted rougly `~22 seconds`
 The test lasted roughly `~26 seconds`
 
 
-## Compilation
+## Compilation:
 
 The emulator was tested on all 3 popular operating systems.
 
