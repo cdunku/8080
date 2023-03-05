@@ -564,7 +564,7 @@ static inline void ldax(i8080* const s, uint8_t opcode)
   s->a = readByte(s, get_pair(s, (opcode & 0x30) >> 4));
 }
 
-static inline void dad(i8080* const s, uint16_t opcode)
+static inline void dad(i8080* const s, uint8_t opcode)
 {
   uint16_t pair_got = get_pair(s, (opcode & 0x30) >> 4);
   s->cf = ((PAIR(s->h, s->l) + pair_got) >> 16) & 1;
