@@ -20,5 +20,5 @@ all: $(OBJS)
 %: %.c 
 	$(CC) $(CFLAGS)  "$<" -c "$@"
 
-clean: all
+clean:
 	rm -rvf $(OBJS) $(BIN) *.gch
