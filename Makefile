@@ -5,7 +5,6 @@ CC := gcc
 CFLAGS := -O3 -Wall -Wextra -std=c99 -pedantic
 LDFLAGS := --print-memory-usage
 BIN = i8080
-DEBUG_BIN = i8080_debug
 
 # -fsanitize=address,undefined 
 
@@ -22,4 +21,4 @@ all: $(OBJS)
 	$(CC) $(CFLAGS)  "$<" -c "$@"
 
 clean: all
-	rm -rvf $(OBJS) $(BIN) $(DEBUG_BIN) *.gch
+	rm -rvf $(OBJS) $(BIN) *.gch
