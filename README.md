@@ -8,7 +8,7 @@ The complete emulation of the Intel 8080 CPU written completely in C99.
 
 - Make it as **readable** as possible without the cost of performance. 
 
-- Make it **portable**; It has been tested on MacOS Ventura (13.x), Fedora 36, Windows 11. MacOS and Fedora tests were baremetal and Windows 11 was tested on a virtual machine (Software used: [UTM](https://mac.getutm.app/))
+- Make it **portable**; It has been tested on MacOS Ventura (13.x), Fedora 36, Windows 11. MacOS and Fedora tests were baremetal and Windows 11 was tested on a virtual machine. (Software used: [UTM](https://mac.getutm.app/))
 
 - Make it as **accurate**; tried different test suites, like the [Intel 8080 KR580VM80A (Russian model)](https://github.com/begoon/i8080-core/tree/master/assets) and the [altairclone](https://altairclone.com/downloads/cpu_tests/) being one of them.
 
@@ -48,6 +48,49 @@ The test lasted rougly `~22 seconds`
 The test lasted roughly `~26 seconds`
 
 
+## Compilation
+
+The emulator was tested on all 3 popular operating systems.
+
+Compilers used on every platform:
+
+`Linux`: `GCC`
+
+`MacOS`: `GCC & CLANG`
+
+`Windows`: `MinGW`
+
+### Linux
+
+`GCC` is preinstalled to most Linux distrubitions. 
+
+### MacOS
+
+In order to install `GCC` on MacOS you firstly need to open the `Terminal`. `Command + Space` to open Spotlight and type `Terminal` and insert the following command: ``xcode-select --install``.
+
+### Windows
+
+Installing `GCC` on Windows is much more time consuming. First and foremost, you can install all the GNU Compilers on [SourceForge](https://sourceforge.net/projects/mingw/). Go through the setup process until you reach the MinGW installation manager and mark the desired options for installation and click apply. Next you'll need to change your system's Enviornment Variables. Run `Super/Windows + R` and type `systempropertiesadvanced` and select `Environment Variables` double click `Path` in the `System variables` section. Click `New` and add `C:\MinGW\bin` as a path. Open PowerShell and insert `gcc -v`, the output should look something like this:
+
+
+```
+PS C:\Users\user> gcc -v
+Using built-in specs.
+COLLECT_GCC=C:\MinGW\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1)
+```
+
+
+For some reason I couldn't install `Make` with MinGW so I did the following:
+
+Open `Windows Powershell` with administrator permissions and run the following command in order to install `Chocolatey`: `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`. When `Chocolatey` is installed run `choco install make` to install `Make`. After that you're good to go!
+
+
+## Emulator output:
 
 The `altairclone` test should have the desired output:
 
