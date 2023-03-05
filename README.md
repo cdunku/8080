@@ -70,7 +70,7 @@ In order to install `GCC` on MacOS you firstly need to open the `Terminal`. `Com
 
 ### Windows
 
-Installing `GCC` on Windows is much more time consuming. First and foremost, you can install all the GNU Compilers on [SourceForge](https://sourceforge.net/projects/mingw/). Go through the setup process until you reach the MinGW installation manager and mark the desired options for installation and click apply. Next you'll need to change your system's Enviornment Variables. Run `Super/Windows + R` and type `systempropertiesadvanced` and select `Environment Variables` double click `Path` in the `System variables` section. Click `New` and add `C:\MinGW\bin` as a path. Open PowerShell and insert `gcc -v`, the output should look something like this:
+Installing `GCC` on Windows is much more time consuming. First and foremost, you can install all the GNU Compilers on [SourceForge](https://sourceforge.net/projects/mingw/). Go through the setup process until you reach the MinGW installation manager and mark the desired options for installation and click apply. I'd recommend you to pick `mingw-developer-tools`, `mingw-32 base`, `mingw-32-gcc-g++` and `msys-base` (Other options include different compilers for different languages, e.g. `g++` is for `C++`). Next you'll need to change your system's Enviornment Variables. Run `Super/Windows + R`, type `systempropertiesadvanced`, select `Environment Variables`, double click `Path` and in the `System variables` section click `New` and add `C:\MinGW\bin` as a path. Open PowerShell and insert `gcc -v`, the output should look something like this:
 
 
 ```
