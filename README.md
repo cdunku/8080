@@ -1,6 +1,6 @@
 # 8080 Core
 
-The complete emulation of the Intel 8080 CPU written completely in C99. 
+The complete emulation of the Intel 8080 CPU written completely in the C99 standard.
 
 
 ## Goals:
