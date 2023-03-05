@@ -8,7 +8,7 @@ The complete emulation of the Intel 8080 CPU written completely in C99.
 
 - Make it as **readable** as possible without the cost of performance. 
 
-- Make it **portable**; It has been tested on MacOS Ventura (13.x), Fedora 36, Windows 11. MacOS and Fedora tests were baremetal and Windows 11 was tested on a virtual machine (Software used: [UTM](https://mac.getutm.app/) [Type 1 hypervisor])
+- Make it **portable**; It has been tested on MacOS Ventura (13.x), Fedora 36, Windows 11. MacOS and Fedora tests were baremetal and Windows 11 was tested on a virtual machine (Software used: [UTM](https://mac.getutm.app/))
 
 - Make it as **accurate**; tried different test suites, like the [Intel 8080 KR580VM80A (Russian model)](https://github.com/begoon/i8080-core/tree/master/assets) and the [altairclone](https://altairclone.com/downloads/cpu_tests/) being one of them.
 
