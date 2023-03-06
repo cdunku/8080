@@ -84,6 +84,8 @@ static inline void execute_file(i8080* const s, const char* file_to_load)
 
 int main()
 {
+    const time_t time_start = time(NULL);
+
     char* array[7];
     array[0] = " ________  ________  ________  ________                       \n";
     array[1] = "|\\   __  \\|\\   __  \\|\\   __  \\|\\   __  \\              \n";
@@ -98,7 +100,6 @@ int main()
     }
 
     i8080 state;
-    const time_t time_start = time(NULL);
     execute_file(&state, "test_files/altairclone/TST8080.COM");
     execute_file(&state, "test_files/altairclone/CPUTEST.COM");
     execute_file(&state, "test_files/altairclone/8080PRE.COM");
