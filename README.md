@@ -87,7 +87,11 @@ gcc version 6.3.0 (MinGW.org GCC-6.3.0-1)
 
 For some reason I couldn't install `Make` with MinGW so I did the following:
 
-Open `Windows Powershell` with administrator permissions and run the following command in order to install `Chocolatey`: `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`. When `Chocolatey` is installed run `choco install make` to install `Make`. After that you're good to go!
+Open `Windows Powershell` with administrator permissions and run the following command in order to install `Chocolatey`: 
+
+`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`. 
+
+When `Chocolatey` is installed run `choco install make` to install `Make`. After that you're good to go!
 
 
 ## Emulator output:
