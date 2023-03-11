@@ -62,7 +62,7 @@ Compilers used on every platform:
 
 ### Linux
 
-`GCC` is preinstalled to most Linux distrubitions. 
+`GCC` is preinstalled to most Linux distributions. 
 
 ### MacOS
 
